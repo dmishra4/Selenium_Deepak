@@ -1,0 +1,7 @@
+Feature: Search on the web
+As a user I want to search on the web so that i can see results
+
+Scenario: results are shown
+	Given the page "https://www.google.com" is open
+	When I search for "CUCUMBER"
+	Then the browser's title should contain "Google"

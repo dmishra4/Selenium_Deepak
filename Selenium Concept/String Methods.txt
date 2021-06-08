@@ -1,0 +1,16 @@
+String Method
+
+>>>> startswith() and endswith() methods which will return true/false.
+
+>>>> Split(expression) - will return array of String.
+
+>>>> trim() - eliminates white spaces before and after string.
+
+>>>> Equals() - will compare and will return true and false
+
+>>>>EqualsIgnorecase - Will compare the content only and will return true and false
+
+>>>> CharAt() - returns a character at specified index
+
+
+>> break; will help to come out from for loop.

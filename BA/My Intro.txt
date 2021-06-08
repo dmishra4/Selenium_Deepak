@@ -1,0 +1,63 @@
+Nakul and Kiran, Manasi
+
+
+So let me start with my name.
+
+My Name is DEEPAK KUMAR and I did B.E in Computer Science. I have more than 10 years of experience including Business Analysis and Test Management..
+
+I have worked on multiple domains. For instance, Banking, Retail and Networking.
+
+In addition, I have worked with numerous prominent clients such as Al rajhi Bank, NBS BANK, HSBC bank, CAterpillar and may more.
+
+On top of that, I have got onshore experiences too. I was in UK for 12 months and I was also in Saudi Arabia for 18 months. My work has been appreciated by the stakeholders at both onshore
+ 
+locations which helps IBM to win UAT contract.
+
+
+
+
+As part of my Business Analyst work, I used to closely work with stateholders including Sponsor, SME, Business Users and Project Manager across a business functional areas to identify 
+Business needs and then transform them into Business requirements. I had worked as a liaison between Business Users and technical team.
+
+Last but not least, I am very good in reatining good relationship with Stateholders and techinical team and I am considering  this as one of my valuable strength.
+
+
+
+
+
+Q:
+
+###############################################################
+
+
+My last project was very enormous and challenging named Smart Collection which was based on Credit Risk Management and Regulation.
+
+There are three type of risk in Bank.
+1. Credit Risk
+2. Market Risk
+3. Operational Risk.
+
+Actually, client was using delinquent users allocation among of all collectors through Manual and it was tedious process and usually taking minium 2-3 days time to complete it.
+
+Stakeholders need was to replace current system with the advance system called Smart collection in oder to do repleace manual allocation from automation. 
+
+I have talked with SME and came to knwo that it is getting impacted all the big portfoli like Car leasing, ConsumerFinance, Real estate, In-House Recovery
+
+
+Issues : Expired contract was getting allocated to collectors.
+Not delinquent but still was displaying delnquent under old collection.
+Delinquent but not dislaying under old collection.
+
+
+Requirement Change :  Create different campaign for Government and Private sector customer.
+                      Write off change from 360 to 180.
+
+Regulations : CRA (Capital Adiquency Ratio) must be 8%
+
+RWA (Risk Weight Asset ) : Avarage of all kind of risks.
+
+
+
+######################
+You are smart and beautiful
+for importantly, you are kind, thougtful and you are full of passion.

@@ -1,0 +1,10 @@
+TDD : TDD is all about making sure that your code works
+
+
+
+
+############# Behavioour Driven Development ###############
+BDD : Does my code do the right thing  ?
+BDD allows you to collaborate with various stakefolders.
+
+## Design normally for acceptance testing

@@ -1,0 +1,34 @@
+-----------------------
+BASEL 1
+----------------------
+
+>> Implemented in 1988
+>> Main focus on credit Risk
+>> Minimum Capital i.e CAR is 8%
+>> India Adopted BASEL 1 in 1999
+
+
+-----------------------------
+Basel 2
+-----------------------------
+
+--> Implemented in 2004
+--> Minimum Capital i.e. CAR is 8%
+--> India Adopted BASEL II in 2004 after financial crisis in 2008
+
+Three Pilars
+____________
+
+Minimum Capital
+Supervisory review ( How to avoid Risk)
+Market Discipline (Market Displine)
+
+-----------------------------
+BASEL III
+------------------------------
+
+--> Implemented in dec 2011
+--> Measurement - Improve the banking sector ability to absorb shocks arising from financial and economical stress.
+---> Improve Risk Mamagement and Governnace
+---> Strengthen banks Transparency & Disclosures.
+----> CAR 9%

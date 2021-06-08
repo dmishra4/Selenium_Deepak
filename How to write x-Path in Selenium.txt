@@ -1,0 +1,22 @@
+//input[@name='q']
+(//input[@value="Google Search"])[2] : Avoid to write like this.
+
+//*[@class='FPdoLc tfB0Bf']//input[@value="Google Search"]
+
+
+//a[text()='Sign in']
+
+//a[contains(text(),'Sign')]   // Check case sensitive
+
+//a[starts-with(text(),'Sign')] 
+
+
+
+//button[text()='Forgot email?']
+
+
+//button[@name='login']//preceding::input[2]
+
+//button[@id='fakebox-microphone' or @title='Search by voice']
+
+//button[@id='fakebox-microphone' and @title='Search by voice']

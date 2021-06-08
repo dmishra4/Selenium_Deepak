@@ -1,0 +1,7 @@
+Name	Roll	College	Salary
+Deepak	4	ITER	200
+Rahul	5	ITER	300
+Mahesh	6	ITER	400
+Suraj	7	ITER	500
+Sonu	8	ITER	600
+Dimple	9	ITER	700

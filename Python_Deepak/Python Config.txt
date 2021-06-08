@@ -1,0 +1,4 @@
+How to access python using command prompt.
+
+
+1. 

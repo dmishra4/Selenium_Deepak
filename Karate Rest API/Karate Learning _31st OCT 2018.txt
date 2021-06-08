@@ -1,0 +1,37 @@
+################## Karate #################
+
+try to set the URL from the karate-config.js
+
+
+
+################### CUCUMBER #######################
+
+1. available feature template (CTRL+space to get a prompt of available templates): 
+2. [JVM] What's causing "required (...)+ loop did not match anything at input '<EOF>'" error
+
+Answer : the message reports a token is missing from your source code and the parser reached the end of file ("EOF") without finding a required repeatable token ("(...)+"): I know error reporting is poorly implemented in the plugin and I'm working on that.
+
+
+############### JSON API Link #############
+
+BaseURL : https://jsonplaceholder.typicode.com
+
+Resources
+JSONPlaceholder comes with a set of 6 common resources:
+
+/posts	100 posts
+/comments	500 comments
+/albums	100 albums
+/photos	5000 photos
+/todos	200 todos
+/users	10 users
+Note: resources have relations. For example: posts have many comments, albums have many photos, ... see below for routes examples.
+
+Background: 
+* def baseUrl = 'https://jsonplaceholder.typicode.com/posts' 
+
+Scenario: Default greeting
+    Given url baseUrl
+    When method get
+    Then status 200
+    And print response

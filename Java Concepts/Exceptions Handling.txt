@@ -1,0 +1,62 @@
+#####3Difference between checked and unchecked exception ########
+
+There are few exceptions which are checked by compiler for the smooth execution of progrem and ensure whether programmer handleded or not : Checked Compiler.
+
+Example : FileNotFoundException
+
+Exception which are not checked by compiler for smooth exceution 
+
+
+********** Whether exception is checked or inchecked compulsory it will occor only at Runtime There is no chance of occuring any exception at compile time.
+
+
+******* Runtime exception and its child , error and it's child classes are unchecked exception except this remaining are checked exceptions.
+
+
+
+Throw : The main object of the throw keyword is to handover our created exception object to JVM manually.
+
+throw new AE("/ by zero")
+
+
+***  An unexpected unwamted event that disturbs the normal flow of program is called exception.
+
+tyrepuntureException
+sleepingException
+filenotfoundException
+
+The main objective of exception handling is graceful termination of program
+
+###### 
+
+Exception handling does not mean repairing an exception , we have to provide alternative way to continue the rest of program normally is the concept of exception handling.
+
+For example : Our programming requirment is to read data from Remote file located at london. At run time if remote file is not available our program should not be abnormally.
+
+We have to provide some local file to continue, rest of the program normally. This way of defining alternavtive is nothing but exception handling.
+
+
+######Exception : Exceptions are caused by our program and recoverable.
+
+######Error : Most of time error are not caused by our program and these are due to lack of system resources.Hence, Error occurs due to lack of resources. it is non recovrable.
+example : if Outofmemory error occurs and being a programmer we can't do any thing and program will be terminated abnormally.
+
+*** System admin or server admin responsible to increase heap memory.
+
+
+###############  Always put risky code under Try Block #############
+
+try
+{
+   Risky Code
+}
+
+catch ( exception e )
+{
+ Handling code
+
+}
+
+
+
+

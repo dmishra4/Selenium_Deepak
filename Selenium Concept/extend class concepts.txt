@@ -1,0 +1,13 @@
+==> It does not matter whether @Test method pass or fail. @AfterMethod will execute every time after the method.
+
+
+---------------------------------------------- Use for testNG------------
+
+Reporter.log ("################Application session stared######",true)
+
+
+--------------------------------------
+
+public class LoginScript  extends BaseClass
+
+Note : In above statement, Baseclass will be executed first.

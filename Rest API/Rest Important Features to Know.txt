@@ -1,0 +1,10 @@
+We have just scratched the surface of REST Assured. There are several more features that can be used for REST testing:
+1.Validating JSON responses according to a schema,
+2.Working with XML data instead of JSON,
+3.Using Groovy closures or Java 8 lambdas for validating responses,
+4.Working with HTTP headers,
+5.Working with cookies,
+6.Posting form parameters,
+7.Using timeouts in tests,
+8.Testing different authentication methods and SSL, and
+9.Writing custom (de)serializers.

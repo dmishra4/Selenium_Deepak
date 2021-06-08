@@ -1,0 +1,235 @@
+Rest Link : http://rest-assured.io/
+
+Link : https://www.youtube.com/watch?v=vjxy3KkYihQ&list=PLEiBaBxmVLi-hoi61aX-2agQb8EXSCT5f&index=2
+
+Rest Example :
+
+1. when().get("https://jsonplaceholder.typicode.com/users/1").then().statusCode(200);
+
+2. when().get("https://jsonplaceholder.typicode.com/users/1").then().statusCode(200).log().all();
+
+3. when().get("https://jsonplaceholder.typicode.com/users/1").then().assertThat().body("email", is(email));
+
+######### Add body two times
+
+4. when().get("https://jsonplaceholder.typicode.com/users/1").then().assertThat().body("address.city", equalTo("Gwenborough")).body("address.street", equalTo("Kulas Light"));
+
+#### Add root for complex json file
+
+5. when().get("https://jsonplaceholder.typicode.com/users/1").then().assertThat().root("address").body("city", equalTo("Gwenborough")).body("street", equalTo("Kulas Light"));
+
+
+###### detach root example 
+
+6. when().get("https://jsonplaceholder.typicode.com/users/1").then().assertThat().root("address").body("city", equalTo("Gwenborough")).body("street", equalTo("Kulas Light")).detachRoot("address").body("address.zipcode",is("92998-3874"));
+
+
+############# extract string (path URL) using extract key word.
+
+7. String href = when().get("https://jsonplaceholder.typicode.com/photos/1").then().assertThat().body("albumId", equalTo(1)).extract().path("url");
+
+System.out.println(href);
+
+when().get(href).then().statuscode(200);
+
+OR
+
+String href1 = get("https://jsonplaceholder.typicode.com/photos/1").path("thumbnailUrl");
+
+System.out.println(href1);
+
+when().get(href1).then().statuscode(200);
+
+OR
+
+String href1 = get("https://jsonplaceholder.typicode.com/photos/1").path("thumbnailUrl");
+
+
+########### extract details as response
+
+8. Response response =  when().get("https://jsonplaceholder.typicode.com/photos/1").then().extract().response();
+
+System.out.println ("Content Type : "+response.path("url");
+System.out.println("Status Code : "+response.statuscode());"
+
+####################### get reponse in string format.
+
+9. String user1details = when().get("https://jsonplaceholder.typicode.com/users/1").asString();
+		System.out.println("The Value of user details is " + user1details);
+
+
+
+################## Get the size of label
+
+String json = given().when().get("https://jsonplaceholder.typicode.com/users").then().extract().asString();
+		
+		   JsonPath jsonpath = new JsonPath(json);
+		   
+		  List<String> ls=  jsonpath.get("name");
+		  
+		  List<String> ls1=  jsonpath.get("address.geo.lat");
+		  
+		  System.out.println("The Total count of name is " +ls.size());
+		  
+		  System.out.println("The Total count of geo latitude is " +ls1.size());
+
+
+###########   POST Method ######################
+
+RestAssured.baseURI = "http://asto3lsrv5744.linux.rabobak.nl"
+ResrAssured.basePath = "ProductAdvice";
+
+File jsonfile = new File("C:\\Automation\\request.json");
+
+Response response =  given().contentType("application/json").log().all().body(jsonfile).post("/rest/02");
+
+response.prettyPrint();
+
+String Resultcode = response.jsonpath().get("ok.generalResultCode");
+
+System.out.println ("The value of resultcode is " +Resultcode);
+System.Out.println(" The value of Staus code of response : " +response.getStatusCode());
+
+
+Note :  Response code can also be get through below code.
+
+.....post("/rest/02").statusCode(200).contentType("application/json").extract().response();
+
+Link :  https://www.youtube.com/watch?v=8nJAP12BqQY&list=PLn7oBY9Dz5sIHJBJvC8vQzAinFAH9vIc5
+
+###################### Insert Header  ###################
+
+Link : https://www.testingexcellence.com/parse-json-response-rest-assured/
+
+given().headers("Content-Type", ContentType.JSON, "Accept", ContentType.JSON).when().get(endpoint).then().contentType(ContentType.JSON).extract().response();
+
+
+###################################
+Gherkin Style Rest Assured POST Request
+####################################
+
+ @Test
+ public void postExamplebyGherkin()
+ {
+     RestAssured.baseURI  = "Your API URL"; 
+ 
+     Response res = given()
+     .contentType("application/json").
+     body("{\"name\":\"Onur Baskirt\"}").
+        when().
+        post("");
+ 
+     String body = res.getBody().asString();
+     System.out.println(body);
+ 
+ }
+
+################### Simple POST Example  ##############
+1.
+        given()
+        .contentType("application/json")
+        .body(car)
+        .when().post("/garage/slots").then()
+        .statusCode(200);
+     
+
+Request Json file :
+{  
+   "plateNumber":"xyx1111",
+   "brand":"audi",
+   "colour":"red"
+}
+
+
+2.  
+
+    given()
+        .contentType("application/json")
+        .body(car)
+        .when().post("/garage/slots").then()
+        .body("empty",equalTo(false))
+        .body("position",lessThan(150));
+
+
+
+3.   Parameter or variable example 
+
+        given().pathParam("slotID", 27)
+        .when().delete("/garage/slots/{slotID}")
+        .then().statusCode(200);
+
+4.    Here Pass one varaible to another variable.
+
+int positionTakenInGarage = given()
+        .contentType("application/json")
+        .body(car)
+        .when().post("/garage/slots").then()
+        .body("empty",equalTo(false))
+        .extract().path("position");
+
+        given().pathParam("slotID", positionTakenInGarage)
+        .when().delete("/garage/slots/{slotID}").then()
+        .statusCode(200);
+
+
+
+
+
+
+
+{
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+        "street": "Kulas Light",
+        "suite": "Apt. 556",
+        "city": "Gwenborough",
+        "zipcode": "92998-3874",
+        "geo": {
+            "lat": "-37.3159",
+            "lng": "81.1496"
+        }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+        "name": "Romaguera-Crona",
+        "catchPhrase": "Multi-layered client-server neural-net",
+        "bs": "harness real-time e-markets"
+    }
+}
+
+
+
+################## Rest API Concept ######3333
+
+The body() method is provided by REST Assured and deals with whatever is returned from the call. The containsString() method comes from Hamcrest and makes the test pass (or fail) if the body contains that string.
+
+
+
+
+
+Feature: XYZ service returns positive response
+Scenario  Ouline: Scenario1
+Given a soap request "<requestFile>" and url "<endpoint>"
+When "POST" action is performed
+Then staus code is "<statusCode>"
+And "Json" response has values as
+#-------------------------------------
+#  | Name   |   Value |
+#-------------------------------------
+
+| name 1 | Value 1|
+| name 2 | Value 2|
+
+@SIT
+Examples
+| requestFile |  endpoint | statusCode|
+|req1.json   | https://reqres.in/api/users?delay=3  | 200|
+
+@UAT
+Examples
+|requestFile | endpoint | statusCode |
+|req2.json   | https://reqres.in/api/users?delay=3 | 200|

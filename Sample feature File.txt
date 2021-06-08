@@ -1,0 +1,6 @@
+Feature: OpenAndClose
+
+    Scenario: OpenAndClose Browser
+    Given user opened firefox browser
+    Then user entered url
+    Then user closed firefox browser

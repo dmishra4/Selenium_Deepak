@@ -1,0 +1,88 @@
+This API is developed by Developed by Joda.org
+
+Below classes are defined under java.time package.
+
+
+Example 1 ::
+
+LocalDate date = LocalDate.now();
+		System.out.println("The Current date is  :: "+date);
+
+// The Current date is  :: 2020-09-03
+
+Example 2 :
+
+LocalTime currenttime = LocalTime.now();
+		
+		System.out.println("The Current time is  :: "+currenttime);
+
+// The Current time is  :: 11:36:37.869
+
+Example 3 ::  Print the date in required format.
+
+		LocalDate date = LocalDate.now();   // It is factory method.
+		System.out.println("The Current date is  :: "+date);		
+		//System.out.println(date.);
+		int dd = date.getDayOfMonth();
+		int mm = date.getMonthValue();
+		int yyyy = date.getYear();
+		System.out.println( dd+"/"+mm+"/"+yyyy);
+		System.out.println( dd+"-"+mm+"-"+yyyy);
+		System.out.printf("%d:%d:%d\n",dd,mm,yyyy);
+		System.out.println("The day of month i.e. today's date is  :: "+dd);
+		System.out.println(date.getYear());
+		System.out.println(date.getMonth());
+		System.out.println(date.getMonthValue());
+
+#####################################
+
+Example 4 ::  Different format of time as per requirement
+LocalTime currenttime = LocalTime.now();		
+		System.out.println("The Current time is  :: "+currenttime);
+		
+		int h = currenttime.getHour();
+		int m = currenttime.getMinute();
+		int s = currenttime.getSecond();
+		int n = currenttime.getNano();
+		
+		System.out.printf("%d:%d:%d:%d",h,m+4,s,n);
+
+######################## LocalDateTime  #################
+
+All above used methods can be used for LocalDateTime class also.
+
+Example :: 5
+
+LocalDateTime dt = LocalDateTime.now();
+		System.out.println(dt);
+		int dd =  dt.getDayOfMonth();
+		int mm = dt.getMonthValue();
+		int yyyy = dt.getYear();
+		System.out.printf("%d:%d:%d",dd,mm,yyyy);
+                System.out.printf("\nTime :: %d:%d:%d",dd,mm,yyyy);
+
+##########################################################################################################
+
+//#####################################################################  Specific date ###############
+Example 6 :: 
+		
+		//LocalDateTime dt = LocalDateTime.of(1982,12,28,13,26);
+		LocalDateTime dt= LocalDateTime.of(1982,Month.APRIL,10,12,45);
+		System.out.println(dt);
+		
+		System.out.println("After 5 Months :: "+dt.plusMonths(5));
+		System.out.println("After 5 days   :: "+dt.plusDays(5));
+		System.out.println("Before 5 Months :: "+dt.minusMonths(5));
+		
+
+############################################# Period #############################
+Example : 7 
+
+	//	################################################################   Period Method
+		
+		LocalDate birthday = LocalDate.of(1982, Month.DECEMBER, 28);
+		LocalDate today = LocalDate.now();
+		Period P = Period.between(birthday, today);
+		System.out.printf(" My Age is %d years %d months %d days",P.getYears(),P.getMonths(),P.getDays());
+
+		

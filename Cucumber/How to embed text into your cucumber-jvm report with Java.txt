@@ -1,0 +1,15 @@
+import cucumber.api.Scenario;
+
+public class MyStepdefs {
+    private Scenario scenario;
+
+    @Before
+    public void before(Scenario scenario) {
+        this.scenario = scenario;
+    }
+
+    @Given("^I have (\\d+) cukes in my belly$")
+    public void cukes_in_my_belly(int cukes) {
+        scenario.write("This goes into the report(s)\n");
+    }
+}

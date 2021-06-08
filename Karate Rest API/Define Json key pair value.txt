@@ -1,0 +1,10 @@
+
+
+Var obj1 = { Key1 : "String", Key2 : Integer value, Key3 : Boolean Value}
+
+Key is always left side and value should be right side.
+
+Var Obj1 = { user : "John" , age : 26, country : "United State"};
+document.write (Obj1.user)
+
+document.write(Obj1.user+" age is"+obj1.age);

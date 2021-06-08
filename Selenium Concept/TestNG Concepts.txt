@@ -1,0 +1,212 @@
+Grouping is only possible in TestNG but not in JUNIT
+
+Assertions means comparission 
+
+Parallel : run the exexution on same browser and different browser.
+
+Annotation start with @a
+
+@Test --> Just before any method
+
+@Test
+Public void logintofacebook.
+
+TestNG programs will not have 'main method'
+
+
+
+@BeforeTest : Only run before running any test cases.
+
+Example Invoke the browser
+
+@AfterTest  : Run at the end of test
+
+example : Close the browser
+
+
+Before Any Tests  (@BeforeTest)
+Before Class
+After Every Test Methods
+Before Every Tests Methods
+Inside F1
+After Every Test 	Method
+After Every Test Methods
+Before Every Tests Methods
+Inside F2
+After Every Test 	Method
+After Class
+After Any Tests  (@AfterTest)
+PASSED: f1
+PASSED: f2
+
+
+=> dependsONmethods will get last priority then prioirty methods.
+
+package testNG;
+
+import org.testng.annotations.Test;
+
+public class testattributes {
+	@Test(priority = 0)
+	public void a() {
+	}
+
+	@Test(dependsOnMethods = { "h" })
+	public void o() {
+	}
+
+	@Test(priority = 2)
+	public void h() {
+	}
+
+	@Test(enabled = false)
+	public void f() {
+	}
+
+	@Test(priority = 41)
+	public void c() {
+	}
+}
+
+
+Hard Dependency
+_______________________
+
+@Test ( dependsOnMethods = {"Search"})
+
+One one method fail and other methoda will not run.
+
+Soft Dependency
+
+_________________________
+
+@Test ( dependsOnMethods = {"Search"}, alwaysRun = true)
+
+@BeforeMethod : Executes Before every test cases in a class
+@AfterMethod :  Execute after test case in class
+
+---------------------------
+
+@BeforeClass : Executes before all test cases in a class
+@AfterClass :  Execute after all test cases in a class.
+
+-----------------------------
+
+@BeforeTest : Executes before all test cases from all classes in XML file.
+@AfterTest  : Execute after all test cases fom all classes in XML files.
+
+
+-----------------------------------------------------------------
+Grouping Test Cases
+
+-----------------------------------------------
+XML File
+
+<suite name="Suite" parallel="false">
+	<test name="Test">
+		<groups>
+			<run>
+				<include name="Regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="NewTestNG.GroupingTests" />
+		</classes>
+	</test>
+</suite> 
+
+------------------------------
+Class 
+----------------
+
+package NewTestNG;
+
+import org.testng.annotations.AfterGroups;
+import org.testng.annotations.BeforeGroups;
+import org.testng.annotations.Test;
+
+public class GroupingTests {
+	@BeforeGroups  (groups = "Regression")
+	public void LogIn() {
+
+		System.out.println("LogIn sucessful");
+	}
+
+	@AfterGroups  (groups = "Regression")
+	public void LogOff() {
+
+		System.out.println("LogOff sucessful");
+	}
+
+	@Test(groups = { "Sanity" })
+	public void AdvSearch() {
+
+		System.out.println("Advance search  sucessfully done");
+	}
+
+	@Test(groups = { "Regression" })
+	public void Search() {
+
+		System.out.println("Advance search  sucessfully done");
+	}
+
+	@Test(groups = { "Sanity", "Regression" })
+	public void Payment() {
+
+		System.out.println("Payment is done sucessfully");
+	}
+
+}
+
+---------------------------------------------------------------
+
+
+Data driven Testing using DataProvider annotation
+
+> Test data can efficiently be read from excel using JXL or POI
+
+> String S1 = obj.findElement(By.xpath(".//*[@value='Google Search']")).getAttribute("value");
+
+--------------------------------
+Assertion : Assert is a class is used to validate.
+
+  @Test
+  public void f1() {
+	  
+	  System.out.println("Test Case f1 Started ");
+	  Assert.assertEquals(12, 13, " Actual does not match with expected");
+	  System.out.println("Test Case Completed");
+  }
+  
+  @Test
+  public void f2() {
+	  
+	  System.out.println("Test Case f2 Started ");
+	  Assert.assertEquals(12, 12, " Actual does not match with expected");
+	  System.out.println("Test Case Completed");
+  }
+  
+  @Test
+  public void f3() {
+	  
+	  String x = "Deepak Kumar";
+	  System.out.println("Test Case f3 Started ");
+	  Assert.assertTrue(x.contains("Deepakk"), "This step has failed. Hence, raise a defect");
+	  System.out.println("Test Case Completed");
+  }
+}
+
+--------------------------------
+Soft Assertion
+
+  @Test
+  public void f() {
+	  
+	  SoftAssert SoftAssertion = new SoftAssert();
+	  System.out.println("Test Case started");
+	  SoftAssertion.assertEquals(13, 12, "Count does not match");
+	  System.out.println("test case completed");
+	  SoftAssertion.assertAll();	  
+	  
+  }
+}

@@ -1,0 +1,64 @@
+--------------------------
+Document Change Control
+--------------------------
+
+1.1 Doucment version details.
+1.2 Document Reviewers.
+1.3 Document Approvers.
+1.4 Document Reference
+
+--------------------------
+Indroduction
+-------------------------
+Background
+Purpose
+Project Goal
+Scope
+Out of Scope
+
+--------------------
+Functional Business Requirment
+----------------------------
+Description of Current Business State
+Description of Proposed Business State
+Business Requirement.
+
+--------------------------
+Non functional Requirements
+---------------------------
+performance
+Security Requirment
+
+--------------------
+RAID
+--------------------
+Risk
+Assumption
+Issue
+Dependency
+
+------------
+Planning Criteria
+----------------
+Specific Testing Requirements
+Implementation Requirments
+
+
+-------------------
+Appendix
+-------------------
+
+
+
+Needs : It describes the purpose of the project,business goals or objectives that statkeholders are trying to achieve.
+
+Requirement : What is required to achieve the business goals.
+
+BA:
+Identify the busniess needs,business rules and help the business team to find out the issues.
+
+
+
+>> Business Analysis : Research and Analysis which helps to identrify and define the Business requirements.
+
+

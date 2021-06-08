@@ -1,0 +1,19 @@
+#########How to install JDBC through Maven ###############
+
+1.Since Oracle JDBC Driver is not in Maven repository, Download ojdbc8.jar and put the below dependency in POM file.
+
+2.
+<dependency>
+		<groupId>com.oracle</groupId>
+		<artifactId>ojdbc</artifactId>
+		<version>8</version>
+		<scope>system</scope>
+		<systemPath>C:\HydroOttawa\CCB-Upgrade\ccbworkspace\ccbupgrade-tests-automation\ccbupgrade-tests-automation-poc\src\test\resources\com\hydroottawa\ccbupgrade\drivers\ojdbc8.jar</systemPath>
+	</dependency>
+
+
+######################################
+
+How to establish connection.
+public static Connection con;
+con = DriverManager.getConnection("jdbc:oracle:thin:@10.166.188.163:1521:CCBSIT", "deepku","Passw0rd2019");

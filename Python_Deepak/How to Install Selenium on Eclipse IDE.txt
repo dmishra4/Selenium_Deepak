@@ -1,0 +1,45 @@
+####################################################
+How to install python  : Step 1
+####################################################
+1. Launch eclipse:
+2. Click on Help-->new softwares
+3. Enter http://pydev.org/updates under 'work with' labels
+4. Select PyDev and click on Next button displayed at botton.
+5. Continue the process.
+
+####################################################
+How to install python  : Step 2
+####################################################
+1. Launch Eclipse
+2. window-->preferences
+3. PyDev-->Interpreter--->Puthon Interpreter
+4. Click on browser for python/pypy.exe path
+5. Enter the python.exe path and click on ok. 
+########################################################
+
+How to install selenium on eclipse(Python)
+
+########################################################
+
+1. First install Python.
+
+2. Enter below value in 'path' under system variable.
+
+C:\Users\IBM_ADMIN\AppData\Local\Programs\Python\Python37-32;
+C:\Users\IBM_ADMIN\AppData\Local\Programs\Python\Python37-32\Scripts
+
+3. Open command prompt and move to the path where python is installed.
+
+ cd C:\Users\IBM_ADMIN\AppData\Local\Programs\Python\Python37-32
+
+4. Then cd scripts
+
+5. Enter below command 
+
+pip install -U selenium
+
+6. Go to below path and check whether Selenium is installed.
+
+
+
+IMP LINKS :  https://pypi.org/project/selenium/

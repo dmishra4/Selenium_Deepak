@@ -1,0 +1,4 @@
+1. 75% reduction in Test Cycle Times
+2. 60% Reduction in Production Defects
+3. Test Coverage will be high as you can test using multiple set of test data.
+4.Accelerate time to market

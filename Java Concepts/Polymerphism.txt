@@ -1,0 +1,34 @@
+WebSite : https://www.javatpoint.com/runtime-polymorphism-in-java
+
+
+1. Polymorphism is a concept in which we can perform single action in different ways.
+
+2. There are two types of Polymerphism .
+a> Compile Time Polymerphism (Overloading)
+b> Run time Polymorphism ( Overrides).
+
+3. Upcasitng : If reference variable of object class refers object of the child class, it is known as Upcasting.
+ 
+
+4.   class P
+{
+
+}
+
+class C extends P
+{
+}
+
+
+P p = new C();
+Here p is reference variable of Parent Class.
+
+Right side part is Object of Child class
+
+4. Upcasitng : If reference variable of object class refers object of the child class, it is known as Upcasting.
+
+5. In overriding, Method invocation is done/determined  by JVM not compiler , then it is called runtime Polymerphism.
+
+6. In overloading , Method resolution always takes care by compiler based on reference type.
+In overloading, run time object will not play any role .
+ 

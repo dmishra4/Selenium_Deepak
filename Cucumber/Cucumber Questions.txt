@@ -1,0 +1,23 @@
+Question 1. What Are Before, After, Beforestep And Afterstep Hooks?
+
+Answer :
+
+Before: execute before the feature file execution
+
+After: executes after the feature file execution
+
+BeforeStep: executes before the each step execution
+
+AfterStep: executes after the each step execution
+
+2. Cucumber supports Java platform for the execution.
+
+3. Checking Assertions : Cucumber does not come with an assertion library. Instead, use the assertion methods from a unit testing tool.
+
+
+### Cucumber is a tool that supports Behaviour-Driven Development(BDD).
+
+### Gherkin has been translates to over 70 languages.
+
+Step Definitions
+In addition to feature files, Cucumber needs a set of step definitions. Step definitions map (or “glue”) each Gherkin step into runnable programming code to carry out what action should be performed by the step.

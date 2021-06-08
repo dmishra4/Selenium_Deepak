@@ -1,0 +1,105 @@
+############ Feature files are having two tags
+
+tags= {"@tag1,@tag2"}
+
+
+2. Extent Report link :
+
+https://www.youtube.com/watch?v=KGBzW3vV0-A
+
+3. Use Name tag in runner class to run specific scenario
+
+name = {"PIN"} 
+
+this cucumber options will run all the scenario contains "PIN:
+
+YouTube link : "https://www.youtube.com/watch?v=CrShy6nkf8k"
+
+4. ######################  AND OR NOT Tags ############################
+
+AND OR NOT
+
+Specifying multiple tag arguments creates a logical AND between each tag expression.
+
+tags= {"@soap UI,@Functional","~Regression"}
+
+
+5 #####################
+
+@runwith(Cucumber.class) annotated classes are meant to be empty and should serve a single purpose: kick of cucumber to run a feature.
+
+6 ###############
+
+dryRun = true // 
+
+DryRun: This option can either set as true or false (default value is false). If it is set as true, it means that Cucumber will only checks that every Step mentioned in the Feature File have corresponding code written in Step Definition file or not. So in case any of the function is missed in the Step Definition for any Step in Feature File, it will give us the message. So If you writing scenarios first and then implementing step definitions then add dryRun = true.
+
+7. ################## Strict #################
+
+This tag will check whether each step is defined in step function or not.
+
+8 ##################### Ignore tags
+
+tags = { "~@SmokeTest","@EndtoEnd"}
+
+
+9. ############### Hooks
+
+import cucumber.api.java.after
+
+@Before : This annotation will run before starting each scenario.
+@After : This annotation will run after finising each scenario.
+
+@After - Global and applicable for all scenario
+@After(@First) : this is applicable only for those scenarios are having @First annotation.
+
+If both anootaoon will be present in the step defintion file then first global after will execute and then local after which having tags will get executed.
+
+10. ############# Feature file path 
+
+./Feature/hooks.feature
+
+11. The basic funda of BDD test is to make the Test in Business readable format, so that business users can understand it easily.
+
+12.#############################
+
+
+Gets the raw data of this table. For example, a Table built from the following plain text:
+
+| a | b |
+| c | d |
+
+gets converted into the following:
+
+[['a', 'b'], ['c', 'd']]
+
+13 ###############################
+	@When("^User enters Credentials to LogIn$")
+	public void user_enters_testuser__and_Test(DataTable usercredentials) throws Throwable {
+ 
+		//Write the code to handle Data Table
+		List<List<String>> data = usercredentials.raw();
+ 
+		//This is to get the first data of the set (First Row + First Column)
+		driver.findElement(By.id("log")).sendKeys(data.get(0).get(0)); 
+ 
+		//This is to get the first data of the set (First Row + Second Column)
+	    driver.findElement(By.id("pwd")).sendKeys(data.get(0).get(1));
+ 
+	    driver.findElement(By.id("login")).click();
+	}
+
+
+
+14#####
+
+Issue : I was able to run the runner file using mvn test but still console was displaying below result.
+tests run 0 failures 0 errors 0 skipped 0 under console as well as jenkins.
+
+Solution : After analysing, I have realised that I have added both testNG and Junit dependency in our POM file. In order to remove this issue, I have removed testNG dependency from my POM. Now test run started displaying value.
+
+
+
+
+
+

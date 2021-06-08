@@ -1,0 +1,7 @@
+
+
+Issue 1 :: Loading of unpacked extensions is disabled by the administrator 
+
+ChormeOptions options = new ChromeOptions();
+
+ options.setExperimentalOption("useAutomationExtension", false);

@@ -1,0 +1,17 @@
+
+
+1>Suppose 4 web element share the same name and if we will use findelement instead of findelements then the first one will be get selected.
+
+
+############## Hidden Element ###############
+
+One of the challenege in selenium to deal with hidden web element and this issue can be over come by using getLocation().getX() method. Both x and y axis value will be zero for hidden element.
+
+###################  How to move to parent windows/Frames in selenium ##########
+
+WebDriver driver = new FirefoxDriver();
+
+driver.SwitchTo().defaultContent();
+
+
+

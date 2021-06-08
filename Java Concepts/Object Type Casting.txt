@@ -1,0 +1,33 @@
+Type csting Tyep
+
+A b  = (C)d;
+
+converting d type of object into C type object. After doing this right side type become C type.
+Then we are asigning to A type reference varable.
+
+Here two check will be done by compiler and one by JVM.
+
+1. Right side conversion is legal or not
+Type of d and C must have some relation. Parent to child, child to parent and same type.
+2. Left side conversion is legal or not.
+type C must be same as A or child type.
+
+Object 0 = new String("Durga");  // Line 1
+StringBuffer sb = (String)0; // Line 2
+
+Here String is not child of String Buffer so it will give compiler error i.e String can't to converted to String Buffer.
+
+
+
+Base b = new der4();
+Object o = (der3)b;
+
+// During run time, JVM will check whether der4 and der3 are same type or der4 is child of der3;
+
+
+
+####################
+At a time of declaration, we can mention the sie otherwise we will get the compile time error.
+
+int[6] x ;  // Invalid
+int[]  x;   // Valid

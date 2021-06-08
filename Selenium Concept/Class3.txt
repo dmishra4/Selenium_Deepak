@@ -1,0 +1,46 @@
+https://www.youtube.com/watch?v=4WkYRd8ox8I
+
+To Import everthing : Cntrl+shift+O
+
+Interface does not have body. 
+
+We can't create object for interface.
+
+WebDriver is interface in JAVA
+
+WebDriver driver = new FirefoxDriver();// here object can use method mentioned under WebDriver interface.
+
+FrifoxDriver driver 1 = new FirefoxDriver();  // Here object can access method mentioned under webdriver as well as defined under FifefoxDriver class.
+
+.//*[@id='gs_htif0']
+
+Primarly
+
+IDE ..we can run any line but that is not possible in WebDriver. WEbDriver wil execute the whole command 
+
+//div[contains(@class, 'MocG8c B9IrJb LMgvRb')]
+
+//content[@class='vRMGwf oJeWuf']
+
+import org.openqa.selenium.JavascriptExecutor
+
+Static and Non Static Methos :
+
+>> Instance ( Non static) varaiables can't be used in static Methods, but we can use stataic and Instance variable in Non Static methods.
+
+>> Non static Methods can't be called within the static methods, but we can call static and non static method within the non Static methods.
+
+>> Static : Need class to call Variables and methods
+
+>> Non-Static (Instance) : Need object (Instance) to call variable and methods.
+
+>> Press Contl+Shift+F to display the code in comprehensive format.
+
+
+//a[text()='Today's Deals']
+
+//a[text() ='Friends']
+
+//a[text() ='Today's Deals']
+
+

@@ -1,0 +1,15 @@
+Constructor :
+
+
+1. It is memeber method.
+
+2. Same name as Classname
+
+3. It will never return anything.
+
+4. It will be used to allocate memory.
+
+5. We can define initial value of variable.
+
+
+Overloading  : Same function name but different parameters.

@@ -1,0 +1,13 @@
+git config --global user.name "dmishra4"
+
+
+git config --global user.email "deepak.applabs@gmail.com"
+
+
+git init  ( This command is used to initialize)
+
+git status  ( To know the status)
+
+git add app.py
+
+21.30

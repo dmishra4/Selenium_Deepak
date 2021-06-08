@@ -1,0 +1,44 @@
+1.https://www.testingexcellence.com/set-multiple-headers-http-request-karate/
+
+
+2. https://devhub.io/repos/intuit-karate
+
+
+
+
+Example :
+
+#  var Demo = Java.type('examples.users.DemoClass');
+#  var obj = new Demo();
+#  return obj.sum();
+  
+  var DemoClass = Java.type('examples.users.DemoClass');
+	var  obj = new DemoClass
+	return obj.sum(4,3);
+
+
+* url 'https://jsonplaceholder.typicode.com'
+* def DemoClass = Java.type('examples.users.DemoClass')
+* def d1 =  DemoClass.ran(4)
+* print 'd1 value is '+d1
+
+Given path "users/"+d1+"" 
+
+
+
+
+################## Match Concept #############
+1. match text or binary
+
+# incidentally, match and assert behave exactly the same way for strings
+* def hello = 'Hello World!'
+* match hello == 'Hello World!'
+* assert hello == 'Hello World!'
+
+# when the response is plain-text
+Then match response == 'Health Check OK'
+And match response != 'Error'
+
+
+# when the response is binary (byte-array)
+Then match responseBytes == read('test.pdf')

@@ -1,0 +1,48 @@
+A cucumber is a tool based on Behavior Driven Development (BDD) framework which is used to write acceptance tests for the web application.
+
+
+################## BDD #################
+BDD is behaviour driven development
+
+BDD focus on what to test not how to test.
+
+It used plain English to explain what is exact requirement.
+
+It use Gherkin Langugae
+
+#########################BDD tools in market ###################
+
+1.Cucumber : https://cucumber.io/docs/reference
+
+2. Jbehave
+
+3. SpecFlow etc.  ( Only for dotnet environment)
+
+-----------------------------
+
+Convert requirement file into feature files.
+
+All keywords start with capital letters
+
+@RunWith(Cucumber.class)
+@Cucumber.Options(features=feature",glue={"stepDefinition"})
+
+
+http://cucumber.github.com/cucumber-eclipse/update-site
+
+
+##################### VERY IMP################
+
+How to solve gherkin/formatter/Formatter   issue
+
+Whenever you find such issues, it means there is some issue with gherkin jar available in POM. However, this can be resolve by uploading same jar file under reference libraries.
+
+Note : other such issue can be also solved using the same way.
+
+###################################
+
+obj.findElement(By.xpath(".//*[text()='First name']" + "_link")).sendKeys
+(username);
+
+
+>> # sysmbol is used to comment any line feature file.

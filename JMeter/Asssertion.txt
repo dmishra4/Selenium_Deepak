@@ -1,0 +1,36 @@
+line 1 column 16 - Warning: unknown attribute "itemtype"
+line 1 column 16 - Warning: unknown attribute "itemscope"
+line 1 column 189 - Warning: unknown attribute "itemprop"
+line 1 column 311 - Warning: <style> lacks "type" attribute
+line 2 column 14 - Warning: <style> lacks "type" attribute
+line 2 column 883 - Warning: <body> attribute "bgcolor" has invalid value "#fff"
+line 2 column 932 - Warning: <nobr> is not approved by W3C
+line 2 column 1,085 - Warning: Warning: unescaped & or unknown entity "&tab"
+line 2 column 1,152 - Warning: Warning: unescaped & or unknown entity "&tab"
+line 2 column 1,218 - Warning: Warning: unescaped & or unknown entity "&tab"
+line 2 column 1,294 - Warning: Warning: unescaped & or unknown entity "&tab"
+line 2 column 1,607 - Warning: <nobr> is not approved by W3C
+line 2 column 1,907 - Warning: Warning: unescaped & or unknown entity "&passive"
+line 2 column 1,920 - Warning: Warning: unescaped & or unknown entity "&continue"
+line 2 column 2,060 - Warning: trimming empty <div>
+line 2 column 2,095 - Warning: trimming empty <div>
+line 2 column 2,446 - Warning: <td> attribute "width" has invalid value "25%"
+line 2 column 2,847 - Warning: <td> attribute "width" has invalid value "25%"
+line 2 column 3,197 - Warning: missing </span> before <div>
+line 2 column 3,623 - Warning: discarding unexpected </span>
+InputStream: Doctype given is ""
+InputStream: Document content looks like HTML proprietary
+20 warnings, no errors were found!
+The table summary attribute should be used to describe
+the table structure. It is very helpful for people using
+non-visual browsers. The scope and headers attributes for
+table cells are useful for specifying which headers apply
+to each table cell, enabling non-visual browsers to provide
+a meaningful context for each cell.
+For further advice on how to make your pages accessible
+see "http://www.w3.org/WAI/GL". You may also want to try
+"http://www.cast.org/bobby/" which is a free Web-based
+service for checking URLs for accessibility.
+You are recommended to use CSS to control line wrapping.
+Use "white-space: nowrap" to inhibit wrapping in place
+of inserting <NOBR>...</NOBR> into the markup.

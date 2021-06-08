@@ -1,0 +1,26 @@
+1.OOPs
+2.Exception handling
+3.File Handling
+4.Multithreading
+5.Python Database connectivity
+6.Regular Expression
+7.Decorators
+8.Generators
+9.Assertions
+__________________________________
+10
+
+To hold data inside the application/program we required list or tuple or set or dictionary
+
+
+1. Dictionary Object :
+
+Link : https://www.youtube.com/watch?v=46bcdDq2yng&list=PLd3UqWTnYXOnkicyzePnIg8rc2qEXgjiF&index=31
+
+2. Diction Object examples :
+
+https://www.youtube.com/watch?v=J-Lye2a3p-c&list=PLd3UqWTnYXOnkicyzePnIg8rc2qEXgjiF&index=32
+
+3. Functions :
+
+https://www.youtube.com/watch?v=0uQGy-7lR7M&list=PLd3UqWTnYXOnkicyzePnIg8rc2qEXgjiF&index=33

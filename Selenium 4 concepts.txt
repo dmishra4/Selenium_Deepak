@@ -1,0 +1,16 @@
+Selenium 4 features ::
+95% is same as selenium 3
+1.Take a scrrenshot of specific web element.
+ Link :https://www.youtube.com/watch?v=7Cv9zXQqjkw&list=PLFGoYjJG_fqo3ay1CFTPikzFmzkQzyNxl&index=1
+
+Example : WebElement.getScreenShotAs(OutPutType.File)
+
+
+2. driver.switchTo().newWindow(WindowType.TAB)  // Open a new blank tab
+
+
+3. driver.findElement(RelativeLocator.withTagName("Input").toRightOf(By.linkText("SignIn"))).click  // Click on Input button named submit which is located at right hand side of "SignIn" link .
+
+Link for RelativeLocator :: https://www.youtube.com/watch?v=osBJA4CmJS0
+
+4. Getrect() Method instead of getSize() and getLocation()

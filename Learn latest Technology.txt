@@ -1,0 +1,12 @@
+Selenium Grid
+Dockers
+Zalenium
+Kubernates ( Mostly used for Auto Scalling)
+Microservices Automation
+GIT Configuration 
+
+
+
+
+
+https://sqa.stackexchange.com/questions/17228/how-to-take-the-screenshot-of-a-window-based-gui-application

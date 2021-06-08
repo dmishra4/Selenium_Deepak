@@ -1,0 +1,4 @@
+################# POM #############
+
+
+Page Object Model is a design patteren not a framework

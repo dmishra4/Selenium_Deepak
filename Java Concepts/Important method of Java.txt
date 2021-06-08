@@ -1,0 +1,3 @@
+IMportant Methods :
+
+FileUtils.writeByteArrayToFile(embedShot, embedding.getData());

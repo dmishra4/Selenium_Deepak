@@ -1,0 +1,25 @@
+String parentWindowHandler = driver.getWindowHandle(); // Store your parent window
+String subWindowHandler = null;
+
+Set<String> handles = driver.getWindowHandles(); // get all window handles
+Iterator<String> iterator = handles.iterator();
+
+subWindowHandler = iterator.next();
+
+driver.switchTo().window(subWindowHandler); // switch to popup window
+
+// Now you are in the popup window, perform necessary actions here
+
+driver.switchTo().window(parentWindowHandler);  // switch back to parent windows
+
+
+
+##############################
+   //get the main handle and remove it
+       //whatever remains is the child pop up window handle
+
+       String mainHandle = driver.getWindowHandle();
+       Set<String> allHandles = driver.getWindowHandles();
+       Iterator<String> iter = allHandles.iterator();
+       allHandles.remove(mainHandle);
+       String childHandle=iter.next();

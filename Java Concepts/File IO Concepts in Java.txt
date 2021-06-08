@@ -1,0 +1,38 @@
+I have very rich knowledge of mostly all prominent autimation tools.
+
+
+#### Constructor ##################
+FileWriter fw = new FileWriter(String filepath);
+FileWriter fw = new FileWriter(File file);    // file reference
+
+int read(). It attempt to read next character from the file and return it's UNICODE value. If the next character is not available then this method return -1
+
+As this method returns UNICODE value ( int value) , at the time of prinitng we have to perform type casting
+
+
+############# Example############
+FileReader fr = new FileReader("abc.text");
+int i = fr.read();
+while(i!=1)
+{
+System.out.println(char(i)); // Type casting is done here to chance int unicode value to characters
+   i=fr.read();
+}
+
+############################# Method
+ int read(char[] ch)
+it attemps to read enough characters from the file into file array and returns number of characters copied from the file.
+
+File f = new File(
+char[] ch = new char[(int)fr.length()]
+FileReader fr = new FileReader(f);  // either file path or file reference
+fr.read(ch) // it will read all characters in file and put into ch array character
+
+for ( char ch1 : ch)
+{
+Syso(ch1);
+
+}
+
+##################################
+

@@ -1,0 +1,6 @@
+com\hydroottawa\ccbupgrade\poc\utils\CommonFunctions.class
+com\hydroottawa\ccbupgrade\poc\utils\CCBUpgradeLib.class
+com\hydroottawa\ccbupgrade\poc\utils\ConfigReader.class
+com\hydroottawa\ccbupgrade\poc\stepdefs\POC_Step_Definition.class
+com\hydroottawa\ccbupgrade\poc\page\ref\POC_PageRef.class
+com\hydroottawa\ccbupgrade\poc\runners\POC_Runner.class

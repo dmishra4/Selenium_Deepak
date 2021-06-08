@@ -1,0 +1,17 @@
+Link : https://www.youtube.com/watch?v=l5UgAs6fiUo
+
+1. How to skip a test case under Test NG
+
+Using "Throw new SkipException ("Put any message " )" , a test case can be skipped.
+
+2. How to run test case multiple times in Test NG
+
+ans :  using invocationCount
+
+@Test(invocationCount =3)
+
+3. Add java build path in POM file above dependencies
+<properties>
+<maven.compiler.source>1.8</maven.compiler.source>
+<maven.compiler.target>1.8</maven.compiler.target>
+</properties>

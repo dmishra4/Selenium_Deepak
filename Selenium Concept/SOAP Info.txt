@@ -1,0 +1,11 @@
+SOAP Envelope Tag
+-------------------
+Envelope
+Header
+Body
+
+----------------
+Project-->Interface-->method--->Request
+
+Project-->Test Suite--->Testcase1 or Test 2 or Test case 3 --->
+each test cases will have one or multiple requests as test steps.
